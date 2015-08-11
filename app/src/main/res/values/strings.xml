@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">QxCar</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_tab_first">轮廓电机</string>
+    <string name="main_tab_second">动力电池</string>
+    <string name="main_tab_three">车灯车窗</string>
+    <string name="main_tab_four">空调设置</string>
+    <string name="main_tab_five">音响设置</string>
+    <string name="main_tab_six">汽车设置</string>
+    <string name="main_tab_seven">一键服务</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
