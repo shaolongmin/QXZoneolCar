@@ -10,14 +10,14 @@
         android:id="@+id/main_fragment_container"
         android:layout_width="fill_parent"
         android:layout_height="0sp"
-        android:layout_weight="18"
+        android:layout_weight="16"
         android:orientation="vertical" >
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal" >
@@ -28,7 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_first_tab_image"
@@ -44,6 +45,7 @@
                 android:layout_below="@id/main_first_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_first"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -53,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_second_tab_image"
@@ -69,6 +72,8 @@
                 android:layout_below="@id/main_second_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_second"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -78,7 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_three_tab_image"
@@ -94,6 +100,8 @@
                 android:layout_below="@id/main_three_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_three"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -103,7 +111,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_four_tab_image"
@@ -119,6 +128,8 @@
                 android:layout_below="@id/main_four_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_four"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -128,7 +139,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_five_tab_image"
@@ -144,6 +156,8 @@
                 android:layout_below="@id/main_five_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_five"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -153,7 +167,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_six_tab_image"
@@ -169,6 +184,8 @@
                 android:layout_below="@id/main_six_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_six"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
 
@@ -178,7 +195,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:layout_marginTop="5sp"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:background="@color/blank">
 
             <ImageView
                 android:id="@+id/main_seven_tab_image"
@@ -194,6 +212,8 @@
                 android:layout_below="@id/main_seven_tab_image"
                 android:layout_centerHorizontal="true"
                 android:text="@string/main_tab_four"
+                android:textColor="@color/white"
+                android:background="@color/blank"
                 android:textSize="12sp" />
         </RelativeLayout>
     </LinearLayout>

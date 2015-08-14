@@ -1,9 +1,139 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.zoneol.qxcar.fragment.IndexFragment">
+    android:layout_height="match_parent" tools:context="com.zoneol.qxcar.fragment.IndexFragment"
+    android:background="@color/blank">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@drawable/index_left_bg">
+
+            <ImageView
+                android:id="@+id/index_left_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_left_car"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <RadioGroup
+                android:id="@+id/index_left_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_left_car"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/index_radio_left"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/index_radio_right"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_left_radiogroup"
+                android:layout_centerHorizontal="true"
+                android:text="@string/index_query_history"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_control_temperature"
+                android:textColor="@color/white"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_control_tear"
+                android:textColor="@color/white"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="55dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_wheel_height"
+                android:textColor="@color/white"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="75dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_slip"
+                android:textColor="@color/white"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="95dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_pressure"
+                android:textColor="@color/white"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="115dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_door_pressure"
+                android:textColor="@color/white"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="135dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_battery"
+                android:textColor="@color/white"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="155dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_motor"
+                android:textColor="@color/white"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="175dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_txt_wheel_motor"
+                android:textColor="@color/white"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="195dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
+        </RelativeLayout>
+    </LinearLayout>
 
 </FrameLayout>
