@@ -201,55 +201,111 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener{
                 .beginTransaction();
 
         if (indexSelectPosition == INDEX_CONTROL_TEMPERATURE) {
-
+            index_txt_control_temperature.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexControlTemperatureFragment);
         }else if (indexSelectPosition == INDEX_CONTROL_TEAR) {
-
+            index_txt_control_tear.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexControlTearFragment);
         }else if(indexSelectPosition == INDEX_WHEEL_HEIGHT) {
-
+            index_txt_wheel_height.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexWheelHeightFragment);
         }else if(indexSelectPosition == INDEX_WHEEL_TEMPERATURE) {
-
+            index_txt_wheel_temperature.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexWheelTemperatureFragment);
         }else if(indexSelectPosition == INDEX_SLIP) {
-
+            index_txt_slip.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexSlipFragment);
         }else if(indexSelectPosition == INDEX_PRESSURE) {
-
+            index_txt_pressure.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexPressureFragment);
         }else if(indexSelectPosition == INDEX_BATTERY) {
-
+            index_txt_battery.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexBatteryFragment);
         }else if(indexSelectPosition == INDEX_DOOR_PRESSURE) {
-
+            index_txt_door_pressure.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexDoorPressureFragment);
         }else if(indexSelectPosition == INDEX_MOTOR) {
-
+            index_txt_motor.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexMotorFragment);
         }else if(indexSelectPosition == INDEX_WHEEL_MOTOR) {
-
+            index_txt_wheel_motor.setTextColor(getResources().getColor(R.color.white));
+            transaction.hide(indexWheelMotorFragment);
         }
     }
 
     private void swithRightContain(int index) {
-         this.restoreTxtColor();
+        this.restoreTxtColor();
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                .beginTransaction();
+        Fragment fragment = null ;
+        if (indexSelectPosition == INDEX_CONTROL_TEMPERATURE) {
+            indexSelectPosition = INDEX_CONTROL_TEMPERATURE ;
+            index_txt_control_temperature.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexControlTemperatureFragment ;
+        }else if (indexSelectPosition == INDEX_CONTROL_TEAR) {
+            indexSelectPosition = INDEX_CONTROL_TEAR ;
+            index_txt_control_tear.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexControlTearFragment ;
+        }else if(indexSelectPosition == INDEX_WHEEL_HEIGHT) {
+            indexSelectPosition = INDEX_WHEEL_HEIGHT ;
+            index_txt_wheel_height.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexWheelHeightFragment ;
+        }else if(indexSelectPosition == INDEX_WHEEL_TEMPERATURE) {
+            indexSelectPosition = INDEX_WHEEL_TEMPERATURE ;
+            index_txt_wheel_temperature.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexWheelTemperatureFragment ;
+        }else if(indexSelectPosition == INDEX_SLIP) {
+            indexSelectPosition = INDEX_SLIP ;
+            index_txt_slip.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexSlipFragment ;
+        }else if(indexSelectPosition == INDEX_PRESSURE) {
+            indexSelectPosition = INDEX_PRESSURE ;
+            index_txt_pressure.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexPressureFragment ;
+        }else if(indexSelectPosition == INDEX_BATTERY) {
+            indexSelectPosition = INDEX_BATTERY ;
+            index_txt_battery.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexBatteryFragment ;
+        }else if(indexSelectPosition == INDEX_DOOR_PRESSURE) {
+            indexSelectPosition = INDEX_DOOR_PRESSURE ;
+            index_txt_door_pressure.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexDoorPressureFragment ;
+        }else if(indexSelectPosition == INDEX_MOTOR) {
+            indexSelectPosition = INDEX_MOTOR ;
+            index_txt_motor.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexMotorFragment ;
+        }else if(indexSelectPosition == INDEX_WHEEL_MOTOR) {
+            indexSelectPosition = INDEX_WHEEL_MOTOR ;
+            index_txt_wheel_motor.setTextColor(getResources().getColor(R.color.yellow));
+            fragment = indexWheelMotorFragment ;
+        }
+
+        transaction.replace(R.id.index_right_contain , fragment).commit() ;
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId() ;
         if (id == R.id.index_txt_control_temperature) {
-
+            swithRightContain(INDEX_CONTROL_TEMPERATURE) ;
         } else if (id == R.id.index_txt_control_tear) {
-
+            swithRightContain(INDEX_CONTROL_TEAR) ;
         } else if (id == R.id.index_txt_wheel_height) {
-
+            swithRightContain(INDEX_WHEEL_HEIGHT) ;
         } else if (id == R.id.index_txt_wheel_temperature) {
-
+            swithRightContain(INDEX_WHEEL_TEMPERATURE) ;
         } else if (id == R.id.index_txt_slip) {
-
+            swithRightContain(INDEX_SLIP) ;
         } else if (id == R.id.index_txt_pressure) {
-
+            swithRightContain(INDEX_PRESSURE) ;
         } else if (id == R.id.index_txt_door_pressure) {
-
+            swithRightContain(INDEX_DOOR_PRESSURE) ;
         } else if (id == R.id.index_txt_battery) {
-
+            swithRightContain(INDEX_BATTERY) ;
         } else if(id == R.id.index_txt_motor) {
-
+            swithRightContain(INDEX_MOTOR) ;
         } else if (id == R.id.index_txt_wheel_motor) {
-
+            swithRightContain(INDEX_WHEEL_MOTOR) ;
         }
     }
 }
