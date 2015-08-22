@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_second"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_second_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_three"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_three_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_four"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_four_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_five"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_five_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -176,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_six"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_six_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -204,7 +204,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/main_tab_seven"
-                android:src="@drawable/main_first_tab_img" />
+                android:src="@drawable/main_seven_tab_img" />
 
             <TextView
                 android:layout_width="wrap_content"
