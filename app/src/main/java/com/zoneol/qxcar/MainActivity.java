@@ -2,16 +2,18 @@ package com.zoneol.qxcar;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.zoneol.qxcar.fragment.BaseFragment;
-import com.zoneol.qxcar.fragment.first.FirstFragment;
 import com.zoneol.qxcar.fragment.IndexFragment;
+import com.zoneol.qxcar.fragment.first.FirstFragment;
 import com.zoneol.qxcar.fragment.five.FiveFragment;
 import com.zoneol.qxcar.fragment.four.FourFragment;
 import com.zoneol.qxcar.fragment.second.SecondFragment;
@@ -20,7 +22,7 @@ import com.zoneol.qxcar.fragment.six.SixFragment;
 import com.zoneol.qxcar.fragment.three.ThreeFragment;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener , BaseFragment.OnFragmentInteractionListener{
+public class MainActivity extends FragmentActivity implements View.OnClickListener , BaseFragment.OnFragmentInteractionListener{
     private int fragmentAnimation = FragmentTransaction.TRANSIT_FRAGMENT_OPEN ;
     private int main_tab_selected ;
     private IndexFragment mIndexFragment = null;
@@ -35,8 +37,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //去除title
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //去掉Activity上面的状态栏
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
         if (findViewById(R.id.main_fragment_container) != null ) {
             if (savedInstanceState != null) {
                 return ;

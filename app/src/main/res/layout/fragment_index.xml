@@ -19,7 +19,7 @@
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/index_left_car"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="45dp"
                 android:layout_marginLeft="60dp"
                 />
             <RadioGroup
@@ -44,10 +44,11 @@
             </RadioGroup>
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:layout_below="@+id/index_left_radiogroup"
                 android:layout_marginLeft="80dp"
-                android:text="@string/index_query_history"/>
+                android:text="@string/index_query_history"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/index_txt_control_temperature"
@@ -65,8 +66,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_control_tear"
                 android:textColor="@color/white"
-                android:layout_marginLeft="185dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="188dp"
+                android:layout_marginTop="30dp"
                 />
 
             <TextView
@@ -75,8 +76,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_wheel_height"
                 android:textColor="@color/white"
-                android:layout_marginLeft="225dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginLeft="233dp"
+                android:layout_marginTop="55dp"
                 />
 
             <TextView
@@ -85,8 +86,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_wheel_temperature"
                 android:textColor="@color/white"
-                android:layout_marginLeft="245dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginLeft="253dp"
+                android:layout_marginTop="80dp"
                 />
             <TextView
                 android:id="@+id/index_txt_slip"
@@ -94,8 +95,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_slip"
                 android:textColor="@color/white"
-                android:layout_marginLeft="260dp"
-                android:layout_marginTop="130dp"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="105dp"
                 />
 
             <TextView
@@ -104,8 +105,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_pressure"
                 android:textColor="@color/white"
-                android:layout_marginLeft="265dp"
-                android:layout_marginTop="155dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="135dp"
                 />
 
             <TextView
@@ -114,8 +115,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_door_pressure"
                 android:textColor="@color/white"
-                android:layout_marginLeft="240dp"
-                android:layout_marginTop="185dp"
+                android:layout_marginLeft="257dp"
+                android:layout_marginTop="165dp"
                 />
 
             <TextView
@@ -124,8 +125,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_battery"
                 android:textColor="@color/white"
-                android:layout_marginLeft="225dp"
-                android:layout_marginTop="210dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="190dp"
                 />
             <TextView
                 android:id="@+id/index_txt_motor"
@@ -133,8 +134,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_motor"
                 android:textColor="@color/white"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="235dp"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="215dp"
                 />
             <TextView
                 android:id="@+id/index_txt_wheel_motor"
@@ -142,8 +143,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/index_txt_wheel_motor"
                 android:textColor="@color/white"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="260dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="230dp"
                 />
         </RelativeLayout>
         <RelativeLayout
