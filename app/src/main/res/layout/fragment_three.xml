@@ -1,10 +1,326 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zoneol.qxcar.fragment.three.ThreeFragment">
+    tools:context="com.zoneol.qxcar.fragment.three.ThreeFragment"
+    android:background="@drawable/main_three_tab_bg">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+            <RelativeLayout
+                android:id="@+id/three_top_one"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_top_one_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_front_car_lighting"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_top_one_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_front_car_lighting"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_top_two"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_top_two_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_night_lighting_car"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_top_two_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_night_lighting_car"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_top_three"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_top_three_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_front_battery"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_top_three_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_front_battery"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_top_four"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_top_four_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_right_middle_column_lamp"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_top_four_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_right_middle_column_lamp"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_top_five"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_top_five_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_right_put_to_the_lamp"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_top_five_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_right_put_to_the_lamp"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <RelativeLayout
+                android:id="@+id/three_bottom_one"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_one_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_car_tail_light_logo"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_one_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_car_tail_light_logo"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_bottom_two"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_two_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_put_newspaper"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_two_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_put_newspaper"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_bottom_three"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_three_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_rear_battery_lamp"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_three_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_rear_battery_lamp"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_bottom_four"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_four_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_rear_lamp"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_four_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_rear_lamp"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_bottom_five"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_five_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_storage_box"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_five_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_storage_box"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/three_bottom_six"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/three_bottom_six_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/three_right_box_lamp"
+                    android:src="@drawable/first_finger_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three_bottom_six_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/three_right_box_lamp"
+                    android:textColor="@color/blank"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 </FrameLayout>

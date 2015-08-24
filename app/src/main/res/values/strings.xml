@@ -24,7 +24,54 @@
     <string name="index_txt_battery">电池锁紧</string>
     <string name="index_txt_motor">转向电机</string>
     <string name="index_txt_wheel_motor">轮廓电机</string>
+
+    <!--first tab -->
+    <string name="first_wheel_speed">转速(rad/min):</string>
+    <string name="first_wheel_temperature">温度(°C):</string>
+    <string name="first_slip">角度(°):</string>
+    <string name="first_power">力矩(N/m):</string>
+    <string name="first_feng_pressure">风压(Pa):</string>
+    <string name="first_weight">载重量(Kg):</string>
+    <string name="first_you_pressure">油压(Pa):</string>
+
+    <!-- second tab-->
+    <string name="second_mileage">续航里程(KM):</string>
+    <string name="second_battery">电量(%):</string>
+    <string name="second_temperature">平均温度(C):</string>
+    <string name="second_electric_current">总电流(A):</string>
+    <string name="second_trmperature_changer">最大温差(C):</string>
+    <string name="second_electric_pressure">总电压(V):</string>
+    <string name="secondelectric_pressure_changer">总电压差(V):</string>
+
+    <!-- three tab-->
+    <string name="three_front_car_lighting">前车内照明灯</string>
+    <string name="three_night_lighting_car">车内夜行照明</string>
+    <string name="three_front_battery">前电池照明灯</string>
+    <string name="three_right_middle_column_lamp">右中柱照明灯</string>
+    <string name="three_right_put_to_the_lamp">右放包照明灯</string>
     
+    <string name="three_car_tail_light_logo">车尾LOGO灯</string>
+    <string name="three_put_newspaper">放报灯</string>
+    <string name="three_rear_battery_lamp">后电池照明灯</string>
+    <string name="three_rear_lamp">车内后照明灯</string>
+    <string name="three_storage_box">储物箱</string>
+    <string name="three_right_box_lamp">右保险箱照明灯</string>
+    
+    <!-- four tab-->
+    <string name="four_inner_loop">内循环</string>
+    <string name="four_humidity">湿度</string>
+    <string name="four_wind_point">风点</string>
+    <string name="four_format">制式</string>
+    <string name="four_timing">定时</string>
+    <string name="four_wind_velocity">风速</string>
+    <string name="four_exterior_windows_sesk">外窗吹风</string>
+    <string name="four_in_windows_sesk">内窗吹风</string>
+
+    <!-- five tab-->
+    <string name="five_voice_one">第一声源</string>
+    <string name="five_voice_two">第二声源</string>
+    <string name="five_voice_three">第三声源</string>
+    <string name="five_voice_four">第四声源</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

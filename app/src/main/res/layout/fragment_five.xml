@@ -1,10 +1,128 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zoneol.qxcar.fragment.five.FiveFragment">
+    tools:context="com.zoneol.qxcar.fragment.five.FiveFragment"
+    android:background="@color/blank">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
 
+        <RelativeLayout
+            android:id="@+id/five_top_linear"
+            android:layout_width="260dp"
+            android:layout_height="190dp"
+            android:background="@drawable/five_top_bg"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five_voice_one"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:background="@color/deep_green"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five_voice_three"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="85dp"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:background="@color/deep_green"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five_voice_two"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:background="@color/deep_green"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five_voice_four"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="85dp"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:background="@color/deep_green"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/five_bottom_linear"
+            android:layout_width="305dp"
+            android:layout_height="92dp"
+            android:background="@drawable/five_bottom_bg"
+            android:layout_below="@+id/five_top_linear"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/five_bottom_stop"
+                android:layout_centerInParent="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/five_voice_change"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/pair_pair_blue"
+                    android:text="VOC-"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/five_voice_change"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/pair_pair_blue"
+                    android:text="VOC+"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 </FrameLayout>

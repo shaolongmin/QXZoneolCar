@@ -3,4 +3,8 @@
     <color name="blank">#000000</color>
     <color name="white">#ffffff</color>
     <color name="yellow">#ffff00</color>
+    <color name="pair_blue">#9900cc</color>
+    <color name="pair_pair_blue">#33ccff</color>
+    <color name="green">#00ff00</color>
+    <color name="deep_green">#66cc66</color>
 </resources>
