@@ -80,6 +80,17 @@
     <string name="six_setting_light">光线设置</string>
 
     <string name="six_car_bottom_toast">Tip:绿色线内玻璃是否透明:(白色:透明;灰色:不透明)</string>
+
+    <string name="six_three_one">车架纵梁供气:</string>
+    <string name="six_three_two">车门密封供气:</string>
+    <string name="six_three_three">电池除尘供气:</string>
+    <string name="six_three_four">挡风玻璃供气:</string>
+    <string name="six_three_five">外后视镜供气:</string>
+    <string name="six_three_six">伦廓转向供气:</string>
+    <string name="six_three_seven">车轮制动供气:</string>
+
+    <string name="six_three_open">打开/关闭</string>
+    <string name="six_three_close">关闭/打开</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
